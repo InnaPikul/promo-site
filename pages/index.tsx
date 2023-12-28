@@ -1,56 +1,79 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-import Post from '../interfaces/post'
+import Image from 'next/image';
+import Layout from '../components/layout';
 
-type Props = {
-  allPosts: Post[]
-}
-
-export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+const HomePage = () => {
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
-        </Head>
-        <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
-      </Layout>
-    </>
-  )
-}
+    <Layout>
+      <div>
+        <section className='text-center mb-20'>
+          <h1 className='text-3xl font-black sm:text-4xl md:text-5xl lg:text-6xl'>Lorem ipsum dolor sit amet</h1>
+          <p className='mb-10 max-w-xl mx-auto mt-2 text-lg font-light leading-tight text-gray-500 sm:text-xl md:text-2xl'>Etiam porttitor, tortor non laoreet condimentum, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</p>
+          <Image
+            src='https://placehold.co/1000x400.png'
+            width={1000}
+            height={400}
+            alt="banner"
+            className='mx-auto'
+          />
+        </section>
+        <section className='mb-20'>
+          <h2 className='text-4xl mb-10'>Переваги продукту</h2>
+          <div className='flex'>
+            <div className="basis-1/4 text-center px-5">
+              <div className='flex justify-center mb-2'>
+                <Image
+                  src='https://placehold.co/100x100.png'
+                  width={100}
+                  height={100}
+                  alt="advantage1"
+                />
+              </div>
+              <h3 className='mb-2 text-2xl'>Доступність</h3>
+              <div className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor, tortor non laoreet condimentum, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</div>
+            </div>
+            <div className="basis-1/4 text-center px-5">
+              <div className='flex justify-center mb-2'>
+                <Image
+                  src='https://placehold.co/100x100.png'
+                  width={100}
+                  height={100}
+                  alt="advantage1"
+                />
+              </div>
+              <h3 className='mb-2 text-2xl'>Простота</h3>
+              <div className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttito, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</div>
+            </div>
+            <div className="basis-1/4 text-center px-5">
+              <div className='flex justify-center mb-2'>
+                <Image
+                  src='https://placehold.co/100x100.png'
+                  width={100}
+                  height={100}
+                  alt="advantage1"
+                />
+              </div>
+              <h3 className='mb-2 text-2xl'>Надійність</h3>
+              <div className='text-base'>Lorem ipsum am porttitor, tortor non laoreet condimentum, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</div>
+            </div>
+            <div className="basis-1/4 text-center px-5">
+              <div className='flex justify-center mb-2'>
+                <Image
+                  src='https://placehold.co/100x100.png'
+                  width={100}
+                  height={100}
+                  alt="advantage1"
+                />
+              </div>
+              <h3 className='mb-2 text-2xl'>Безпека</h3>
+              <div className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor, tortor non laoreet condimentum, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</div>
+            </div>
+          </div>
+        </section>
+        <section></section>
+      </div>
+    </Layout>
+  );
+};
 
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
+export default HomePage;
 
-  return {
-    props: { allPosts },
-  }
-}
