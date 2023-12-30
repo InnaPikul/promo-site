@@ -6,9 +6,8 @@ type Props = {
 }
 
 const UserCard = ({ user }: Props) => {
-  console.log('user', user)
   return (
-    <div className="flex mb-12">
+    <div className="flex flex-wrap mb-12">
       <div className="mr-5 flex">
         <Image
           src='/assets/blog/dynamic-routing/cover.jpg'
@@ -20,7 +19,7 @@ const UserCard = ({ user }: Props) => {
           src='/assets/blog/dynamic-routing/cover.jpg' 
           width={200} 
           height={100} 
-          className="ml-8" 
+          className="ml-2 sm:ml-8" 
           alt="Cover picture 2"/>
       </div>
       <div>

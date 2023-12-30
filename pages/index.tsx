@@ -18,8 +18,8 @@ const HomePage = () => {
         </section>
         <section className='mb-20'>
           <h2 className='text-4xl mb-10'>Переваги продукту</h2>
-          <div className='flex'>
-            <div className="basis-1/4 text-center px-5">
+          <div className='flex flex-wrap -mx-2 sm:-mx-5'>
+            <div className="basis-1/2 md:basis-1/4 text-center px-2 sm:px-5 mb-5">
               <div className='flex justify-center mb-2'>
                 <Image
                   src='https://placehold.co/100x100.png'
@@ -31,7 +31,7 @@ const HomePage = () => {
               <h3 className='mb-2 text-2xl'>Доступність</h3>
               <div className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor, tortor non laoreet condimentum, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</div>
             </div>
-            <div className="basis-1/4 text-center px-5">
+            <div className="basis-1/2 md:basis-1/4 text-center px-2 sm:px-5 mb-5">
               <div className='flex justify-center mb-2'>
                 <Image
                   src='https://placehold.co/100x100.png'
@@ -43,7 +43,7 @@ const HomePage = () => {
               <h3 className='mb-2 text-2xl'>Простота</h3>
               <div className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttito, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</div>
             </div>
-            <div className="basis-1/4 text-center px-5">
+            <div className="basis-1/2 md:basis-1/4 text-center px-2 sm:px-5 mb-5">
               <div className='flex justify-center mb-2'>
                 <Image
                   src='https://placehold.co/100x100.png'
@@ -55,7 +55,7 @@ const HomePage = () => {
               <h3 className='mb-2 text-2xl'>Надійність</h3>
               <div className='text-base'>Lorem ipsum am porttitor, tortor non laoreet condimentum, diam sem facilisis dolor, eu viverra ipsum sem at nisi.</div>
             </div>
-            <div className="basis-1/4 text-center px-5">
+            <div className="basis-1/2 md:basis-1/4 text-center px-2 sm:px-5 mb-5">
               <div className='flex justify-center mb-2'>
                 <Image
                   src='https://placehold.co/100x100.png'

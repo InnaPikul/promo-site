@@ -15,7 +15,7 @@ export default function Contacts() {
                 </svg>
                 </div>
                 <h3 className='mb-2 text-2xl text-gray-500'>Адреса</h3>
-                <div className='text-base'>м.Харків вул. Шевченка 21</div>
+                <div className='text-base'><address className='not-italic'>м.Харків вул. Шевченка 21</address></div>
               </div>
               <div className="basis-1/3 text-center px-5">
                 <div className='flex justify-center mb-2'>
@@ -25,7 +25,9 @@ export default function Contacts() {
 
                 </div>
                 <h3 className='mb-2 text-2xl text-gray-500'>Телефон</h3>
-                <div className='text-base'>111 232 432 21</div>
+                <div className='text-base'>
+                  <a href="tel:111 232 432 21">111 232 432 21</a>
+                </div>
               </div>
               <div className="basis-1/3 text-center px-5">
                 <div className='flex justify-center mb-2'>
@@ -34,7 +36,7 @@ export default function Contacts() {
                   </svg>
                 </div>
                 <h3 className='mb-2 text-2xl text-gray-500'>Електронна пошта</h3>
-                <div className='text-base'>business@info.com</div>
+                <div className='text-base'><a href="mailto:business@info.com">business@info.com</a></div>
               </div>
             </div>
         </section>

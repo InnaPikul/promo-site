@@ -1,6 +1,6 @@
 
 import Layout from '../../components/layout'
-import Post from '../../components/Post'
+import Post from '../../components/post'
 import PostType from '../../interfaces/post'
 
 interface Props {

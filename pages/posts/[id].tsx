@@ -13,7 +13,6 @@ type Props = {
 
 
 export default function PostInfo({ postInfo }: Props) {
-  console.log('postInfo', postInfo)
   return (
     <Layout>
       <div className='my-12'>
