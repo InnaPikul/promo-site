@@ -35,13 +35,13 @@ export default function About({ data }: Props) {
   )
 }
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 
-  const query = 'SELECT title, text FROM news'
+//   const query = 'SELECT title, text FROM news'
 
-      const result = await conn.query(
-          query,
-      );
+//       const result = await conn.query(
+//           query,
+//       );
 
-  return { props: { posts: [] } }
-}
+//   return { props: { posts: [] } }
+// }
