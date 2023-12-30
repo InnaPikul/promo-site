@@ -1,50 +1,47 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
+```markdown
+# Проєкт кваліфікаційної роботи на Next.js - Інструкція по запуску локально
 
-This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
+Цей проєкт розроблено з використанням Next.js, сучасного фреймворку для реактивних веб-додатків. Нижче наведено інструкцію щодо того, як запустити проєкт локально на вашому комп'ютері.
 
+## Попередні вимоги
 
-## Deploy your own
+Переконайтеся, що у вас встановлені наступні компоненти:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter)
+1. [Node.js](https://nodejs.org/) - версія 12 або новіша
+2. [npm](https://www.npmjs.com/) (Node Package Manager) - зазвичай встановлюється разом з Node.js
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
+## Кроки для запуску проєкту
 
-### Related examples
+1. **Завантажте архів проєкту:**
 
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Umbraco Heartcore](/examples/cms-umbraco-heartcore)
-- [Builder.io](/examples/cms-builder-io)
-- [TinaCMS](/examples/cms-tina/)
-- [Enterspeed](/examples/cms-enterspeed)
+2. **Встановіть залежності:**
+    ```bash
+    npm install
+    ```
 
-## How to use
+3. **Запустіть проєкт локально:**
+    ```bash
+    npm run dev
+    ```
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+4. **Перейдіть за посиланням:**
+    Відкрийте ваш браузер і перейдіть за посиланням [http://localhost:3000].
 
-```bash
-npx create-next-app --example blog-starter blog-starter-app
+## Додаткові команди
+
+- **Запуск у режимі продакшн:**
+    ```bash
+    npm run build
+    npm start
+    ```
+
+- **Запуск тестів:**
+    ```bash
+    npm test
+    ```
+
+## Інші зауваження
+
+- Переконайтеся, що не виникло жодних помилок під час встановлення залежностей або запуску проєкту.
+
 ```
-
-```bash
-yarn create next-app --example blog-starter blog-starter-app
-```
-
-```bash
-pnpm create next-app --example blog-starter blog-starter-app
-```
-
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
